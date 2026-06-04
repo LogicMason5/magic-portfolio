@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Logic",
+  lastName: "Mason",
+  name: "Logic Mason",
+  role: "AI & Fullstack Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "logicmason5@gmail.com",
+  location: "Asia/Tokyo", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["Japanese", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Occasional notes on AI, full-stack engineering, and building intelligent products</>,
 };
 
 const social: Social = [
@@ -25,25 +25,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/LogicMason5",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "#", // TODO: add your LinkedIn profile URL
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "#", // TODO: add your Instagram profile URL
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@logicmason",
     essential: true,
   },
   {
@@ -60,23 +60,23 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Turning ideas into intelligent digital solutions</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">AI Platform</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/ai-ml-integration-platform",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
+    I'm Logic, an <Text as="span" size="xl" weight="strong">AI & Full-Stack Engineer</Text> building scalable web and mobile apps <br /> powered by AI and blockchain — taking products from idea to deployment for clients worldwide.
 </>
   ),
 };
@@ -102,9 +102,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Logic is an Osaka-based AI & Full-Stack Engineer specializing in AI/ML integration. He builds
+        scalable web and mobile applications — bringing together intelligent models, robust backends,
+        and blockchain components to turn ideas into production-ready digital solutions.
       </>
     ),
   },
@@ -113,42 +113,34 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Freelance",
+        timeframe: "Oct 2023 - Present",
+        role: "Full-Stack / AI Engineer (Remote)",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          "Provide comprehensive full-stack web and mobile solutions for global clients, incorporating AI models and blockchain components.",
+          "Own the complete project lifecycle: from requirements gathering through architecture design to implementation, testing, and deployment.",
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "GDP Labs",
+        timeframe: "Oct 2018 - Sep 2023",
+        role: "Senior / Principal Full-Stack & AI Engineer",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          "Led architecture and technical decisions as a Senior/Principal Full-Stack Engineer for large-scale web and mobile applications.",
+          "Designed and delivered cross-platform mobile solutions integrated with scalable backend services and AI-driven features.",
+          "Built high-performance APIs, modern frontend systems, and cloud-native infrastructure to ensure reliability, security, and seamless user experiences.",
+          "Directed CI/CD, containerization, and deployment pipelines while mentoring engineers and driving technical roadmaps across teams.",
+        ],
+        images: [],
+      },
+      {
+        company: "Cambridge Technology Partners",
+        timeframe: "Oct 2017 - Sep 2018",
+        role: "Full-Stack Developer (Intern)",
+        achievements: [
+          "Worked under senior engineers on web and back-end services, assisting in system integration and consulting projects.",
+          "Gained hands-on experience in REST API development, database design, and full-stack web application workflows.",
         ],
         images: [],
       },
@@ -159,12 +151,9 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Tokyo Institute of Technology (Tokyo Tech)",
+        description:
+          "B.Eng. in Information Technology, specializing in Computer Science & Artificial Intelligence (2013 - 2017).",
       },
     ],
   },
@@ -173,60 +162,59 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
+        title: "AI & Backend",
+        description:
+          "Designing AI-integrated backends and high-performance APIs across multiple runtimes.",
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
+          { name: "Python", icon: "python" },
+          { name: "FastAPI", icon: "fastapi" },
+          { name: "Node.js", icon: "nodejs" },
+          { name: "Nest.js", icon: "nestjs" },
+          { name: "Laravel", icon: "laravel" },
+          { name: "Go", icon: "go" },
+          { name: "Rust", icon: "rust" },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
+        title: "Frontend",
+        description:
+          "Building modern, responsive web interfaces with the React and Vue ecosystems.",
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "React", icon: "react" },
+          { name: "Next.js", icon: "nextjs" },
+          { name: "Vue.js", icon: "vuejs" },
+          { name: "TypeScript", icon: "typescript" },
+          { name: "JavaScript", icon: "javascript" },
         ],
         // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+        images: [],
+      },
+      {
+        title: "Mobile",
+        description:
+          "Delivering cross-platform mobile apps integrated with scalable backends.",
+        tags: [
+          { name: "React Native", icon: "react" },
+          { name: "Flutter", icon: "flutter" },
         ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Data & DevOps",
+        description:
+          "Cloud-native infrastructure, containerization, and reliable data layers.",
+        tags: [
+          { name: "PostgreSQL", icon: "postgresql" },
+          { name: "MongoDB", icon: "mongodb" },
+          { name: "GraphQL", icon: "graphql" },
+          { name: "Docker", icon: "docker" },
+          { name: "Java", icon: "java" },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [],
       },
     ],
   },
